@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quizExpirience.Pages.ResultsQuiz"
+             Title="ResultsQuiz">
+    
+    
+    <VerticalStackLayout>
+        
+        <Label VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               TextColor="White"
+               x:Name="GreentingLabel"
+               Text="Parabéns por responder o Formulário"/>
+
+        <Label VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="White"
+               x:Name="ResultsLabel"/>
+
+    </VerticalStackLayout>
+    
+    
+</ContentPage>

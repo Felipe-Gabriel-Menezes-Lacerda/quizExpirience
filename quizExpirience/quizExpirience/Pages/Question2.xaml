@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quizExpirience.Pages.Question2"
+             Title="Question2">
+    
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <Label Text="O que é um circulo ?"
+               FontSize="20"
+               Margin="0, 10, 0, 10"/>
+
+        
+            
+            <RadioButton Content="Não sei faltei essa aula"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Um corpo redondo"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Um Polígono geométrico"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Esse conjunto é um 1-variedade diferenciável compacta sem borda, homeomorfa ao espaço topológico 
+𝑆
+1
+S 
+1
+ , o círculo unitário."
+                         Value="Certa"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+        
+
+        <Button Text="Enviar resposta"
+                x:Name="verifyButton"
+                Clicked="VerifyAnswerButton"/>
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>

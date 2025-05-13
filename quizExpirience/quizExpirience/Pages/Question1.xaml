@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="quizExpirience.Pages.Question1"
+             Title="Question1">
+    
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <Label Text="Qual é a cor do Céu?"
+               FontSize="20"
+               Margin="0, 10, 0, 10"/>
+
+        
+            
+            <RadioButton Content="Azul"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Azul claro"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Azul escuro"
+                         Value="Errada"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+
+            <RadioButton Content="Cor da refração da luz nas partículas de água"
+                         Value="Certa"
+                         CheckedChanged="VerifyAnswerRadioButton"/>
+        
+
+        <Button Text="Enviar resposta"
+                x:Name="verifyButton"
+                Clicked="VerifyAnswerButton"/>
+
+
+    </VerticalStackLayout>
+    
+</ContentPage>
